@@ -1,0 +1,24 @@
+body {
+  .banner_index {
+    background-image: url("https://eegoitaly.in/cdn/shop/collections/Sports_Shoes_Banner.png?v=1690211860&width=1600");
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+  }
+
+  .product_categories {
+    .product_show {
+      img {
+        width: 400px;
+        height: auto;
+      }
+    }
+  }
+  .products {
+    .categories {
+      h4 {
+        font-size: 30px;
+      }
+    }
+  }
+}

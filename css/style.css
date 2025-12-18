@@ -3,15 +3,50 @@
   font-family: "Audiowide", sans-serif;
 }
 
-body header nav {
+header nav {
   background-color: #496b93;
 }
-body header nav .max-w-screen-xl .nav_icon a {
+header nav .max-w-screen-xl .nav_icon a {
   font-size: 20px;
   padding-right: 5px;
 }
-body header nav .max-w-screen-xl .nav_icon a i::before {
+header nav .max-w-screen-xl .nav_icon a i::before {
   border-radius: 50% !important;
-  background-color: red;
-  padding: 5px;
+  background-color: white;
+  padding: 8px;
+  margin: 5px;
+}
+header nav .max-w-screen-xl button li a span i.fa-user {
+  padding-right: 20px;
+}
+
+body .banner_index {
+  background-image: url("https://eegoitaly.in/cdn/shop/collections/Sports_Shoes_Banner.png?v=1690211860&width=1600");
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+body .product_categories .product_show img {
+  width: 400px;
+  height: auto;
+}
+body .products .categories h4 {
+  font-size: 30px;
+}
+
+body .banner_detail {
+  background-image: url("https://t4.ftcdn.net/jpg/07/32/67/15/360_F_732671561_pN33bNo3bcq2ZmkZFSLR3kk41fpg7rxc.jpg");
+  background-position: bottom left;
+  background-size: cover;
+  height: 30vh;
+}
+body .product_categories .product_show img {
+  width: 400px;
+  height: auto;
+}
+body .products .categories h4 {
+  font-size: 30px;
+}
+body .product_info .content_right .payment_option img {
+  height: 50px;
 }/*# sourceMappingURL=style.css.map */
