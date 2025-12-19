@@ -32,7 +32,7 @@ const renderproduct = (product) => {
           alt=""
         />
       </div>
-      <div class="content_right space-y-4">
+      <div class="content_right space-y-4 px-3">
         <h3 class="font-bold text-3xl uppercase">${product.name}</h3>
         <p class="sold_info text-orange-600 text-xl">23 Items sold in last 13 hours</p>
         <p class="short_description text-sm">

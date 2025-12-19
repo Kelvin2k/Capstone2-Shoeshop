@@ -25,7 +25,6 @@ const getDataProductAsync = async () => {
   }
 };
 
-
 const renderProduct = (arr) => {
   let content = "";
   for (let i = 0; i < arr.length; i++) {
@@ -44,10 +43,10 @@ const renderProduct = (arr) => {
           />
         </a>
         <div>
-          <div class="flex items-center space-x-3 mb-6">
-            <div class="flex items-center space-x-1 rtl:space-x-reverse">
+          <div class="flex items-center space-x-3 mb-6 ">
+            <div class="flex items-center space-x-1 rtl:space-x-reverse text-sm">
               <svg
-                class="w-5 h-5 text-fg-yellow"
+                class="w-3 h-3 md:w-5 md:h-5 text-fg-yellow"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -60,7 +59,7 @@ const renderProduct = (arr) => {
                 />
               </svg>
               <svg
-                class="w-5 h-5 text-fg-yellow"
+                class="w-3 h-3 md:w-5 md:h-5 text-fg-yellow"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -73,7 +72,7 @@ const renderProduct = (arr) => {
                 />
               </svg>
               <svg
-                class="w-5 h-5 text-fg-yellow"
+                class="w-3 h-3 md:w-5 md:h-5 text-fg-yellow"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -86,7 +85,7 @@ const renderProduct = (arr) => {
                 />
               </svg>
               <svg
-                class="w-5 h-5 text-fg-yellow"
+                class="w-3 h-3 md:w-5 md:h-5 text-fg-yellow"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -99,7 +98,7 @@ const renderProduct = (arr) => {
                 />
               </svg>
               <svg
-                class="w-5 h-5 text-fg-yellow"
+                class="w-3 h-3 md:w-5 md:h-5 text-fg-yellow"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -113,20 +112,20 @@ const renderProduct = (arr) => {
               </svg>
             </div>
             <span
-              class="bg-brand-softer border border-brand-subtle text-fg-brand-strong text-xs font-medium px-1.5 py-0.5 rounded-sm"
+              class="md:bg-brand-softer md:border md:border-brand-subtle md:text-fg-brand-strong md:text-xs md:font-medium md:px-1.5 md:py-0.5 md:rounded-sm hidden md:block"
               >${randomNumber}</span
             >
           </div>
           <a href="#">
-            <h5 class="text-2xl text-heading font-semibold tracking-tight">
+            <h5 class="text-base md:text-2xl text-heading font-semibold tracking-tight">
               ${product.name}
             </h5>
           </a>
-          <div class="flex items-center justify-between mt-6">
-            <span class="text-3xl font-extrabold text-heading">${product.price}</span>
+          <div class="md:flex md:items-center md:justify-between md:mt-6 block">
+            <span class="text-sm md:text-xl font-extrabold text-heading">${product.price}</span>
             <button
               type="button"
-              class="inline-flex items-center text-white bg-brand hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none"
+              class="inline-flex items-center text-white bg-brand hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2 focus:outline-none mt-3"
             >
               <svg
                 class="w-4 h-4 me-1.5"

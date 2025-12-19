@@ -1,0 +1,25 @@
+footer {
+  .content_up {
+    form {
+    }
+    .icon {
+      i {
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover {
+          color: #812bb3;
+        }
+      }
+    }
+  }
+  .content_down {
+    h2 {
+      color: white;
+    }
+    ul {
+      li {
+        color: white;
+      }
+    }
+  }
+}
