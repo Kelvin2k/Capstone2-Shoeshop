@@ -1,6 +1,7 @@
 export const checkEmptyValue = (inputId, valueInput) => {
   if (inputId !== "remember") {
     if (valueInput == "") {
+      console.log(document.getElementById("span_password"));
       document.getElementById("span_" + inputId).innerHTML =
         "Please do not leave this field empty";
       return false;
@@ -41,7 +42,7 @@ export const checkPhoneNumber = (inputId, valueInput) => {
 };
 
 export const checkMinMaxValue = (inputId, valueInput, min, max) => {
-  if (min >= valueInput <= max) {
+  if (valueInput >= min && valueInput <= max) {
     document.getElementById("span_" + inputId).innerHTML = "";
     return true;
   } else {
@@ -59,6 +60,17 @@ export const checkCheckBox = (inputId, valueInput) => {
   } else {
     document.getElementById("span_" + inputId).innerHTML =
       "Please agree to the term";
+    return false;
+  }
+};
+
+export const checkGender = (inputId, valueInput) => {
+  if (valueInput == "male" || valueInput == "female") {
+    document.getElementById(inputId).innerHTML = "";
+    return true;
+  } else {
+    document.getElementById("span_" + inputId).innerHTML =
+      "Gender format allowance only male or female";
     return false;
   }
 };
