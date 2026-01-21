@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+
   <!-- font awesome  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -15,9 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
 
-  <link href="./../css/style.css" rel="stylesheet" />
-
-
+  <link href="./css/style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -111,7 +110,7 @@
               </div>
             </li>
             <li>
-              <a href="#"
+              <a href="./register.html"
                 class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-yellow-200 md:p-0 md:dark:hover:bg-transparent text-white"><span><i
                     class="fa-regular fa-user pr-8"></i></span>Sign
                 up</a>
@@ -125,14 +124,15 @@
   <!-- Navbar  -->
   <div class="bg-black w-full z-20 top-0 start-0 border-b border-default">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="https://www.shutterstock.com/image-vector/sneakers-shoes-on-black-background-260nw-1503158885.jpg"
           class="h-7" alt="Flowbite Logo" />
-        <span class="self-center text-xl text-heading font-semibold whitespace-nowrap text-yellow-300">Happy Feet</span>
+        <span class="self-center text-sm md:text-xl text-heading font-semibold whitespace-nowrap text-yellow-300">Happy
+          Feet</span>
       </a>
       <div class="flex items-center md:order-2">
         <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false"
-          class="flex items-center justify-center md:hidden text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-2 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm w-10 h-10 focus:outline-none">
+          class="flex items-center justify-center md:hidden text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-2 focus:ring-neutral-tertiary font-medium leading-5 rounded-base text-sm w-10 h-10 focus:outline-none hidden md:block">
           <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
             viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
@@ -154,7 +154,7 @@
             placeholder="Search" />
         </div>
         <a href=""
-          class="text-white rounded-full p-3 bg-yellow-500 ml-2 hover:text-black hover:bg-orange-400 duration-500">
+          class="text-white rounded-full p-3 bg-yellow-500 ml-2 hover:text-black hover:bg-orange-400 duration-500 hidden md:block">
           <i class="fa-solid fa-cart-shopping"></i>
         </a>
         <button data-collapse-toggle="navbar-search" type="button"
@@ -253,138 +253,68 @@
     </div>
   </div>
 
-  <!-- Register  -->
+  <!-- Banner  -->
+  <section class="banner_index grid grid-cols-2 mb-10">
+    <div class="content self-end pb-10 pl-10 space-y-8">
+      <h3 class="subtitle text-3xl">Sneakers 2024 Limited Edition</h3>
+      <h4 class="title text-5xl">FOR JOURNEY WITH YOUR HAPPY FEET</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum facilis
+        in voluptates voluptate maxime, nobis eius corrupti corporis ratione
+        doloremque optio deserunt, reprehenderit provident error placeat.
+        Inventore debitis quis voluptas? Magni quod consectetur quia beatae
+        odio illum ad temporibus voluptatibus ab veniam tempore officia ipsam
+        nostrum quis natus numquam, a quasi? Magnam earum quae consequatur
+        accusantium et, dolore repellendus sunt? Quisquam dignissimos
+        obcaecati maxime rerum reprehenderit adipisci voluptates praesentium
+        corrupti aperiam dicta recusandae illo deleniti, harum excepturi
+        impedit soluta hic quod eos similique amet autem et, voluptas iusto.
+        Quia, possimus.
+      </p>
+    </div>
+  </section>
 
-  <form class="my-10" onsubmit="">
-    <div class="grid gap-6 mb-6 md:grid-cols-2 px-5">
-      <div>
-        <label for="first_name" class="block mb-2.5 font-medium text-heading text-3xl">First name</label>
-        <input type="text" id="first_name"
-          class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
-          placeholder="John" />
-        <span class="span_first_name text-red-600 text-3xl" id="span_first_name"></span>
-      </div>
-      <div>
-        <label for="name" class="block mb-2.5 text-sm font-medium text-heading">Last name</label>
-        <input type="text" id="name"
-          class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
-          placeholder="Doe" />
-        <span class="span_name text-red-600 text-3xl" id="span_name"></span>
-      </div>
-
-      <div>
-        <label for="gender" class="block mb-2.5 text-sm font-medium text-heading">Gender</label>
-        <input type="text" id="gender"
-          class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
-          placeholder="Flowbite" />
-        <span class="span_gender text-red-600 text-3xl" id="span_gender"></span>
-      </div>
-      <div>
-        <label for="phone" class="block mb-2.5 text-sm font-medium text-heading">Phone number</label>
-        <input type="tel" id="phone"
-          class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
-          placeholder="0923564475" pattern="^(0|\+84|\+61\)|d{9}$" />
-        <span class="span_phone text-red-600 text-3xl" id="span_phone"></span>
-      </div>
+  <!-- Product Categories  -->
+  <section class="product_categories flex flex-col text-center m-20">
+    <div class="title space-y-8">
+      <p class="title text-sm md:text-xl font-bold">OUR PRODUCT CATEGORY</p>
+      <p class="description text-xs md:text-base">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus,
+        corrupti.
+      </p>
     </div>
-    <div class="mb-6 px-5">
-      <label for="email" class="block mb-2.5 text-sm font-medium text-heading">Email address</label>
-      <input type="email" id="email"
-        class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
-        placeholder="john.doe@company.com" />
-      <span class="span_email text-red-600 text-3xl" id="span_email"></span>
+    <div class="product_show flex justify-center mt-10 flex space-x-4 text-center">
+      <a href="#">
+        <img src="https://bt-happy-feet.myshopify.com/cdn/shop/files/Grid-5.png?v=1705642978&width=1500" alt="" />
+      </a>
+      <a href="#">
+        <img src="https://bt-happy-feet.myshopify.com/cdn/shop/files/Grid-2.png?v=1705642844&width=1500" alt="" />
+      </a>
+      <a href="#">
+        <img src="https://bt-happy-feet.myshopify.com/cdn/shop/files/Grid-1.png?v=1705642844&width=1500" alt="" />
+      </a>
+      <a href="#">
+        <img src="https://bt-happy-feet.myshopify.com/cdn/shop/files/Grid-2.png?v=1705642844&width=1500" alt="" />
+      </a>
+      <a href="#">
+        <img src="https://bt-happy-feet.myshopify.com/cdn/shop/files/Grid-3.png?v=1705642844&width=1500" alt="" />
+      </a>
     </div>
-    <div class="mb-6 px-5">
-      <label for="password" class="block mb-2.5 text-sm font-medium text-heading">Password</label>
-      <input type="password" id="password"
-        class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
-        placeholder="•••••••••" />
-      <span class="span_password text-red-600 text-3xl" id="span_password"></span>
+  </section>
+  <!-- Products  -->
+  <section class="products text-center my-10">
+    <h3 class="title text-sm md:text-xl font-bold">FRESH PICKS FOR YOU</h3>
+    <p class="description text-xs md:text-base">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit minima
+      rem voluptatum, rerum aliquid ipsa!
+    </p>
+    <div class="categories text-center flex justify-around items-center px-60 mt-10">
+      <h4 class="hidden md:block">SHOP ALL</h4>
+      <h4 class="hidden md:block">MENS</h4>
+      <h4 class="hidden md:block">WOMENS</h4>
     </div>
-    <!-- <div class="mb-6 px-5">
-        <label
-          for="confirm_password"
-          class="block mb-2.5 text-sm font-medium text-heading"
-          >Confirm password</label
-        >
-        <input
-          type="password"
-          id="confirm_password"
-          class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
-          placeholder="•••••••••"
-          
-        />
-      </div> -->
-    <div class="flex items-start mb-2 px-5">
-      <div class="flex items-center h-5">
-        <input id="remember" type="checkbox" value=""
-          class="w-4 h-4 border border-default-medium rounded-xs bg-neutral-secondary-medium focus:ring-2 focus:ring-brand-soft" />
-      </div>
-      <label for="remember" class="ms-2 text-sm font-medium text-heading">I agree with the
-        <a href="#" class="text-fg-brand hover:underline">terms and conditions</a>.</label>
-    </div>
-    <div class="px-5 mb-10">
-      <span class="span_remember text-red-600 text-3xl" id="span_remember"></span>
-    </div>
-    <div>
-      <button type="submit"
-        class="text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none ml-5">
-        Submit
-      </button>
-    </div>
-  </form>
-
-  <div class="toast flex flex-col items-end">
-    <div id="toast-success"
-      class="flex items-center w-full max-w-sm p-4 text-body bg-neutral-primary-soft rounded-base shadow-xs border border-default hidden"
-      role="alert">
-      <div class="inline-flex items-center justify-center shrink-0 w-7 h-7 text-fg-success bg-success-soft rounded">
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-          viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M5 11.917 9.724 16.5 19 7.5" />
-        </svg>
-        <span class="sr-only">Check icon</span>
-      </div>
-      <div class="ms-3 text-sm font-normal">User added Successfully!</div>
-      <button type="button"
-        class="ms-auto flex items-center justify-center text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded text-sm h-8 w-8 focus:outline-none"
-        data-dismiss-target="#toast-success" aria-label="Close">
-        <span class="sr-only">Close</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-          viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M6 18 17.94 6M18 18 6.06 6" />
-        </svg>
-      </button>
-    </div>
-    <div id="toast-danger"
-      class="flex items-center w-full max-w-sm p-4 text-body bg-neutral-primary-soft rounded-base shadow-xs border border-default hidden"
-      role="alert">
-      <div class="inline-flex items-center justify-center shrink-0 w-7 h-7 text-fg-danger bg-danger-soft rounded">
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-          viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M6 18 17.94 6M18 18 6.06 6" />
-        </svg>
-        <span class="sr-only">Error icon</span>
-      </div>
-      <div class="ms-3 text-sm font-normal">
-        There is an error in adding new user.
-      </div>
-      <button type="button"
-        class="ms-auto flex items-center justify-center text-body hover:text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded text-sm h-8 w-8 focus:outline-none"
-        data-dismiss-target="#toast-danger" aria-label="Close">
-        <span class="sr-only">Close</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-          viewBox="0 0 24 24">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M6 18 17.94 6M18 18 6.06 6" />
-        </svg>
-      </button>
-    </div>
-  </div>
-
+    <div class="product_line justify-items-center grid grid-cols-3 space-y-10 mt-10"></div>
+  </section>
   <!-- Footer  -->
   <footer class="bg-black">
     <div class="content_up grid grid-cols-3 py-5 px-2">
@@ -551,10 +481,9 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="module" src="./js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <script type="module" src="./../js/index.js"></script>
-
 </body>
 
 </html>
